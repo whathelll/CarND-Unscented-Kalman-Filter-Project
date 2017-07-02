@@ -10,6 +10,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 
 
 set(test_SOURCES RunAllTests.cpp 
+	test_ukf.cpp ../src/ukf.cpp
 	test_tools.cpp ../src/tools.cpp)
 
 add_executable(RunAllTests ${test_SOURCES})
