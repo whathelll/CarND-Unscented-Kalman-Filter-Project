@@ -95,8 +95,8 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package) {
   measurements.
   */
   if(!is_initialized_){
-    std::cout << "Time: " << meas_package.timestamp_ << std::endl;
-    std::cout << "Laser Measurement: " << meas_package.raw_measurements_ << std::endl;
+//    std::cout << "Time: " << meas_package.timestamp_ << std::endl;
+//    std::cout << "Laser Measurement: " << meas_package.raw_measurements_ << std::endl;
 
     if(meas_package.sensor_type_ == MeasurementPackage::LASER) {
       x_[0] = meas_package.raw_measurements_[0];
